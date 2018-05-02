@@ -6,12 +6,13 @@
 package agregacioncomposicion;
 
 public class Reloj {
-    private String marca = "CASIO";
+    //private String marca = "CASIO";
+    private MarcaReloj marca = MarcaReloj.POLAR;
 
     public Reloj() {
     }
     
-    public Reloj(String marca){
+    public Reloj(MarcaReloj marca){
         this.marca = marca;
     }
    
@@ -20,13 +21,15 @@ public class Reloj {
         System.out.println("La hora es...");
     }
 
-    public String getMarca() {
+    public MarcaReloj getMarca() {
         return marca;
     }
 
-    public void setMarca(String marca) {
+    public void setMarca(MarcaReloj marca) {
         this.marca = marca;
     }
+
+   
     
     
 }

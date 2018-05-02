@@ -32,6 +32,9 @@ public class AgregacionComposicion {
         pepe.setReloj(casio);
         System.out.println(pepe.getReloj().getMarca());
         
+        pepe.getReloj().setMarca(MarcaReloj.valueOf("CASIO"));
+        System.out.println(pepe.getReloj().getMarca());
+        
         System.out.println("Tu IQ eS:" + pepe.getCerebro().getIQ());
         
         Persona juan = new Persona("Juan", "4110759P",listaCerebro.get(0));
